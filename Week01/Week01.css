@@ -114,7 +114,7 @@ html,body{
 .company{
     flex:none;width:580px;margin:10px;
     height:50px;
-    background-color: pink;
+    background-color: green;
     display:flex; /* 讓下一層次的項目水平排列 */
     
 }
@@ -136,14 +136,15 @@ html,body{
         flex-wrap: wrap; /*往下掉設定*/
     }
     .company{
-        width:90%;
-        margin-left: 0px;
-        margin-right: 0px;
+        width:40%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
     .product{
-        width:45%;
-        margin-left: 0px;
-        margin-right: 0px;
+        width:40%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        
     }
 }
 
