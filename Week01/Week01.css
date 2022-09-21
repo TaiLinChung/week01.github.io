@@ -27,8 +27,9 @@ html,body{
 .mobile-menue{
     background-color: red;
     width:50%;
-    justify-content: center;/*水平置中*/
+    justify-content: right;/*水平靠右*/
     align-items: center;    /*垂直置中*/
+    padding:3px 30px;
     display:none;
 }
 
