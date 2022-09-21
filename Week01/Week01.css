@@ -28,7 +28,8 @@ html,body{
     background-color: red;
     width:50%;
     justify-content: center;/*水平置中*/
-    align-items: center;    /*垂直置中*/
+    align-items: right;    /*垂直置中*/
+    
     display:none;
 }
 
