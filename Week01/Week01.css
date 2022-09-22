@@ -12,14 +12,16 @@ html,body{
 .left{
     background-color: antiquewhite;
     width:50%;
-    padding:3px;
+    padding:2px 3px;
+    font-size: 20px;
 }
 
 .desktop-menue{
     justify-content: right; /*水平對齊-靠右邊*/
     background-color: aquamarine;
     width:50%;
-    padding:3px;
+    padding:2px 3px;
+    font-size: 20px;
     display:flex; /* 讓下一層次的項目水平排列 */
     
 }
