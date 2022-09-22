@@ -4,27 +4,36 @@ html,body{
     width:100%;
 }
 
-.frame{
-    display:flex; /* 讓下一層次的項目水平排列 */
+.head{
+    display:flex;/* 此層做為容器讓下一層次的項目水平排列 */
+    height:20px;
+    font-size: 20px;
     
 }
 
-.left{
-    background-color: antiquewhite;
+.headLeft{
+    background-color: bisque;
     width:50%;
-    padding:2px 3px;
-    font-size: 20px;
+    display:flex;
+    align-items: center;    /*垂直置中*/
+    
 }
-
-.desktop-menue{
+.headRight{
+    background-color: yellowgreen;
+    width:50%;
+    display:flex;
     justify-content: right; /*水平對齊-靠右邊*/
-    background-color: aquamarine;
-    width:50%;
-    padding:2px 3px;
-    font-size: 20px;
-    display:flex; /* 讓下一層次的項目水平排列 */
-    
+    align-items: center;    /*垂直置中*/
 }
+.item1{
+    width:100px;
+    padding:3px;
+}
+.item2{
+    width:70px;
+    padding:3px;
+}
+
 
 .mobile-menue{
     background-color: red;
@@ -35,30 +44,23 @@ html,body{
     display:none;
 }
 
-.item{
-    flex:none;
-    width:50px;
-    margin-right: 10px;
-    text-align: center;
-}
-
 .welcome{
     display:flex;           /*操作內文區塊完美置中*/
     justify-content: center;/*水平置中*/
     align-items: center;    /*垂直置中*/
     height:300px;
-    
     background-color: pink;
 }
 
+
 .text{
-    width:600px;
-    height:50px;
     font-size: 50px;
     font-weight: bold;
+    display:flex;
     text-align: center;     /*內文置中*/
+    justify-content: center;/*水平置中*/
+    align-items: center;    /*垂直置中*/
 }
-
 
 
 .choice{
@@ -133,6 +135,8 @@ html,body{
 }
 
 
+
+
 @media (max-width:1200px){
     /*螢幕小於1200像素，套用這個區塊的CSS*/
     .list{
@@ -165,7 +169,7 @@ html,body{
     .text{
         font-size:30px;
     }
-    .desktop-menue{
+    .headRight{
         display:none;
     }
     .mobile-menue{
