@@ -1,0 +1,180 @@
+html,body{
+    margin:0px; /*確保填滿畫面邊框*/
+    height:100%;
+    width:100%;
+}
+
+.head{
+    display:flex;/* 此層做為容器讓下一層次的項目水平排列 */
+    height:20px;
+    font-size: 20px;
+    
+}
+
+.headLeft{
+    background-color: bisque;
+    width:50%;
+    display:flex;
+    align-items: center;    /*垂直置中*/
+    
+}
+.headRight{
+    background-color: yellowgreen;
+    width:50%;
+    display:flex;
+    justify-content: right; /*水平對齊-靠右邊*/
+    align-items: center;    /*垂直置中*/
+}
+.item1{
+    width:100px;
+    padding:3px;
+}
+.item2{
+    width:70px;
+    padding:3px;
+}
+
+
+.mobile-menue{
+    background-color: red;
+    width:50%;
+    justify-content: right;/*水平靠右*/
+    align-items: center;    /*垂直置中*/
+    padding:3px 30px;
+    display:none;
+}
+
+.welcome{
+    display:flex;           /*操作內文區塊完美置中*/
+    justify-content: center;/*水平置中*/
+    align-items: center;    /*垂直置中*/
+    height:300px;
+    background-color: pink;
+}
+
+
+.text{
+    font-size: 50px;
+    font-weight: bold;
+    display:flex;
+    text-align: center;     /*內文置中*/
+    justify-content: center;/*水平置中*/
+    align-items: center;    /*垂直置中*/
+}
+
+
+.choice{
+    background-color: gold;
+    font-size: 20px;
+}
+
+.pic2{
+    display:flex; /* 讓下一層次的項目水平排列 */
+    justify-content: space-around; /*水平平均分布*/
+    
+}
+
+
+.box2up{
+    /* margin-bottom:6px; */
+    background-color: green;
+    /* width:24%; */
+    /* flex:4  ; 區塊內各佔一份box */
+    height:170px;
+}
+
+.box2down{
+    background-color: red;
+    /* width:24%; */
+    /* flex:1; 區塊內各佔一份box */
+    height:30px;
+    line-height: 30px;
+    text-align:center;    /*垂直置中*/
+    font-size: 20px;
+    
+}
+
+.picture{
+    margin:0px; /*確保填滿畫面邊框*/
+    height:170px;
+    width:100%;
+    object-fit:cover;   /*裁切縮放*/
+    
+}
+
+
+
+
+.list{
+    display:flex;
+    justify-content:center;
+    
+}
+.product{
+    flex:none;width:280px;margin:10px;
+    background-color: pink;
+}
+
+
+.company{
+    flex:none;width:580px;margin:10px;
+    height:50px;
+    background-color: green;
+    display:flex; /* 讓下一層次的項目水平排列 */
+    
+}
+
+.pictureleft{
+    width:80px;height:50px
+
+}
+.box1right{
+    display:flex;           /*操作內文區塊完美置中*/
+    justify-content: center;/*水平置中*/
+    align-items: center;    /*垂直置中*/
+}
+
+
+
+
+@media (max-width:1200px){
+    /*螢幕小於1200像素，套用這個區塊的CSS*/
+    .list{
+        flex-wrap: wrap; /*往下掉設定*/
+    }
+    .company{
+        width:40%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .product{
+        width:40%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        
+    }
+}
+
+@media (max-width:600px){
+    /*螢幕小於600像素，套用這個區塊的CSS*/
+
+    .company{
+        width:90%;
+        margin: 10px;
+    }
+    .product{
+        width:90%;
+        margin: 10px;
+    }
+    .text{
+        font-size:30px;
+    }
+    .headRight{
+        display:none;
+    }
+    .mobile-menue{
+        display:flex;
+    }
+
+    
+}
